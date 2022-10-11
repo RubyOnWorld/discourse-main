@@ -1,0 +1,7 @@
+<a href {{action this.closeMessage this.message}} class="close" aria-label={{i18n "composer.esc_label"}}>
+  {{i18n "composer.esc"}} {{d-icon "times"}}
+</a>
+
+{{html-safe this.message.body}}
+
+<DButton @class="btn-primary" @label="user.private_message" @icon="envelope" @action={{action this.switchPM this.message}} />
