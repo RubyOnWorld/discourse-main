@@ -1,57 +1,3 @@
-<a href="https://www.discourse.org/">
-  <img src="images/discourse-readme-logo.png" width="300px">
-</a>
-
-Discourse is the 100% open source discussion platform built for the next decade of the Internet. Use it as a:
-
-- mailing list
-- discussion forum
-- long-form chat room
-
-To learn more about the philosophy and goals of the project, [visit **discourse.org**](https://www.discourse.org).
-
-## Screenshots
-
-
-<a href="https://bbs.boingboing.net"><img alt="Boing Boing" src="https://user-images.githubusercontent.com/1681963/52239245-04ad8280-289c-11e9-9c88-8c173d4a0422.png" width="720px"></a>
-<a href="https://twittercommunity.com/"><img src="https://user-images.githubusercontent.com/1681963/52239250-04ad8280-289c-11e9-9e42-574f6eaab9d7.png" width="720px"></a>
-
-<img src="https://user-images.githubusercontent.com/1681963/52239118-b304f800-289b-11e9-9904-16450680d9ec.jpg" alt="Mobile" width="414">
-
-Browse [lots more notable Discourse instances](https://www.discourse.org/customers).
-
-## Development
-
-To get your environment setup, follow the community setup guide for your operating system.
-
-1. If you're on macOS, try the [macOS development guide](https://meta.discourse.org/t/beginners-guide-to-install-discourse-on-macos-for-development/15772).
-1. If you're on Ubuntu, try the [Ubuntu development guide](https://meta.discourse.org/t/beginners-guide-to-install-discourse-on-ubuntu-for-development/14727).
-1. If you're on Windows, try the [Windows 10 development guide](https://meta.discourse.org/t/beginners-guide-to-install-discourse-on-windows-10-for-development/75149).
-
-If you're familiar with how Rails works and are comfortable setting up your own environment, you can also try out the [**Discourse Advanced Developer Guide**](docs/DEVELOPER-ADVANCED.md), which is aimed primarily at Ubuntu and macOS environments.
-
-Before you get started, ensure you have the following minimum versions: [Ruby 2.7+](https://www.ruby-lang.org/en/downloads/), [PostgreSQL 13+](https://www.postgresql.org/download/), [Redis 6.2+](https://redis.io/download). If you're having trouble, please see our [**TROUBLESHOOTING GUIDE**](docs/TROUBLESHOOTING.md) first!
-
-## Setting up Discourse
-
-If you want to set up a Discourse forum for production use, see our [**Discourse Install Guide**](docs/INSTALL.md).
-
-If you're looking for business class hosting, see [discourse.org/buy](https://www.discourse.org/buy/).
-
-## Requirements
-
-Discourse is built for the *next* 10 years of the Internet, so our requirements are high.
-
-Discourse supports the **latest, stable releases** of all major browsers and platforms:
-
-| Browsers              | Tablets      | Phones       |
-| --------------------- | ------------ | ------------ |
-| Apple Safari          | iPadOS       | iOS          |
-| Google Chrome         | Android      | Android      |
-| Microsoft Edge        |              |              |
-| Mozilla Firefox       |              |              |
-
-Additionally, we aim to support Safari on iOS 12.5+ until January 2023 (Discourse 3.0).
 
 ## Built With
 
@@ -64,8 +10,6 @@ Additionally, we aim to support Safari on iOS 12.5+ until January 2023 (Discours
 Plus *lots* of Ruby Gems, a complete list of which is at [/main/Gemfile](https://github.com/discourse/discourse/blob/main/Gemfile).
 
 ## Contributing
-
-[![Build Status](https://github.com/discourse/discourse/actions/workflows/tests.yml/badge.svg)](https://github.com/discourse/discourse/actions)
 
 Discourse is **100% free** and **open source**. We encourage and support an active, healthy community that
 accepts contributions from the public &ndash; including you!
@@ -80,10 +24,6 @@ Before contributing to Discourse:
 
 
 We look forward to seeing your pull requests!
-
-## Security
-
-We take security very seriously at Discourse; all our code is 100% open source and peer reviewed. Please read [our security guide](https://github.com/discourse/discourse/blob/main/docs/SECURITY.md) for an overview of security measures in Discourse, or if you wish to report a security issue.
 
 ## The Discourse Team
 
