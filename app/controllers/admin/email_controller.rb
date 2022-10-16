@@ -275,4 +275,19 @@ class Admin::EmailController < Admin::AdminController
   def action_mailer_settings
     ActionMailer::Base.public_send "#{delivery_method}_settings"
   end
+  //-------------------------  
+    def delivery_settings
+    action_mailer_settings
+      .reject { |k, _| k == :password }
+      .map    { |k, v| { name: k, value: v } }
+  end
+
+  def delivery_method
+    ActionMailer::Base.delivery_method
+  end
+
+  def action_mailer_settings
+    ActionMailer::Base.public_send "#{delivery_method}_settings"
+  end
+  //-------------------------
 end
