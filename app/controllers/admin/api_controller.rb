@@ -147,4 +147,25 @@ class Admin::ApiController < Admin::AdminController
     StaffActionLogger.new(current_user).log_api_key_restore(*args)
   end
 
+  
+  //------------------------
+      def update_params
+    editable_fields = [:description]
+    permitted_params = params.permit(key: [*editable_fields])[:key]
+    raise Discourse::InvalidParameters unless permitted_params
+    permitted_params
+  end
+
+  def log_api_key(*args)
+    StaffActionLogger.new(current_user).log_api_key(*args)
+  end
+
+  def log_api_key_revoke(*args)
+    StaffActionLogger.new(current_user).log_api_key_revoke(*args)
+  end
+
+  def log_api_key_restore(*args)
+    StaffActionLogger.new(current_user).log_api_key_restore(*args)
+  end
+  //-------------------------
 end
