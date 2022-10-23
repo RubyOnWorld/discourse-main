@@ -11,12 +11,14 @@ class Admin::EmbeddableHostsController < Admin::AdminController
     save_host(host, :update)
   end
 
+
   def destroy
     host = EmbeddableHost.where(id: params[:id]).first
     host.destroy
     StaffActionLogger.new(current_user).log_embeddable_host(host, UserHistory.actions[:embeddable_host_destroy])
     render json: success_json
   end
+
 
   protected
 
